@@ -320,7 +320,7 @@ Arrays are a special kind of objects, with numbered indexes.
 /**
  *       idea is like this  :::::::::::  array.copyWithin(target, start, end)
  * 
- */
+//  */
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // let res = fruits.copyWithin(2, 0);
 
@@ -358,7 +358,85 @@ Arrays are a special kind of objects, with numbered indexes.
 
 
 // ---------------------------SPlice -------------------------------------------------
+/**
+ * first parameter define where new element should be added 
+ * second parameter define how many elements should be removed
+ */
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let res = fruits.splice(2,0 , 'lemon , "kiwi')
+// console.log(res)
+
+
+
+// ------------------- splice also use to remove the element -------------------------------//
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let res = fruits.splice(2,2, "kiwi", 'peach')
+// console.log(res)
+// console.log(fruits)
+
+
+
+// ---------------------------delete using splice------------------------------------------
+//splice return array with deleted items . and alter the original array
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let res = fruits.splice(0, 1);
+// console.log(res)
+
+
+
+// ----------------------------- Tospliced method ------------------------------------------
+// its same as splice but not alter the original array this is main difference. 
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let res = fruits.toSpliced(3,1 , "kiwi")
+// console.log(res)
+
+// const months = ["Jan", "Feb", "Mar", "Apr"];
+// const spliced = months.toSpliced(0, 1);
+// console.log(spliced)
+
+
+
+
+// ---------------------------- array SLICE method 0-----------------------------------------
+// slice out piece of array into new array . does not remove element from original array but create new array
+// const months = ["Jan", "Feb", "Mar", "Apr"];
+// const spliced = months.slice(1)
+// console.log(spliced)
+
+
+
+
+// --------------------------------- another example of slice ---------------------------
+
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(3);
+// console.log(citrus)
+
+
+// start index is included but not included last end index stop befor them
+
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1,4);
+// console.log(citrus)
+
+
+
+
+//---------------------------------------automatic array to string -------------------------------------
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let res = fruits.toString()
+// console.log(res)
+
+
+
+//------------------------------------------
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
-let res = fruits.splice(2,0 , 'lemon , "kiwi')
-console.log(res)
+fruits.pop()
+console.log(fruits)
